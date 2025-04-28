@@ -1,0 +1,100 @@
+baseurl = "https://64arthuraraujo.github.io"
+title = "Arthur Araujo"
+theme = "hugo-coder"
+languagecode = "en"
+defaultcontentlanguage = "en"
+
+
+[pagination]
+pagerSize = 20
+
+[services]
+[services.disqus]
+shortname = ""
+
+[markup.highlight]
+style = "github-dark"
+
+[params]
+  author = "Arthur Araujo"
+  info = "Software Developer"
+  description = ""
+  keywords = "blog,developer,personal"
+  avatarurl = "images/avatar.jpg"
+  gravatar = "john.doe@example.com"
+
+  faviconSVG = "/img/favicon.svg"
+  favicon_32 = "/img/favicon-32x32.png"
+  favicon_16 = "/img/favicon-16x16.png"
+
+  since = 2025
+
+  enableTwemoji = true
+
+  colorScheme = "auto"
+  hidecolorschemetoggle = false
+
+  # customCSS = ["css/custom.css"]
+  # customSCSS = ["scss/custom.scss"]
+  # customJS = ["js/custom.js"]
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+  author = "authors"
+
+# Social links
+[[params.social]]
+  name = "Github"
+  icon = "fa-brands fa-github fa-2x"
+  weight = 1
+  url = "https://github.com/64ArthurAraujo/"
+[[params.social]]
+  name = "Linkedin"
+  icon = "fa-brands fa-linkedin fa-2x"
+  weight = 2
+  url = "https://www.linkedin.com/in/64arthuraraujo/"
+
+[languages.en]
+languageName = ":uk:"
+
+[[languages.en.menu.main]]
+name = "Projects"
+weight = 1
+url = "projects/"
+
+[[languages.en.menu.main]]
+name = "Posts"
+weight = 2
+url = "posts/"
+
+[[languages.en.menu.main]]
+name = "Contact me"
+weight = 5
+url = "contact/"
+
+[languages.pt-br]
+languageName = ":brazil:"
+title = "Arthur Araujo"
+
+[languages.pt-br.params]
+author = "Arthur Araujo"
+info = "Desenvolvedor de Software"
+description = ""
+keywords = "blog,desenvolvedor,pessoal"
+
+[[languages.pt-br.menu.main]]
+name = "Projetos"
+weight = 1
+url = "projects/"
+
+[[languages.pt-br.menu.main]]
+name = "Postagens"
+weight = 2
+url = "posts/"
+
+[[languages.pt-br.menu.main]]
+name = "Contato"
+weight = 5
+url = "contact/"

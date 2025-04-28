@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>
+  Consertando o update de emails · Arthur Araujo
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Arthur Araujo">
+<meta name="description" content="Um pequeno post sobre como resolvi o issue">
+<meta name="keywords" content="blog,desenvolvedor,pessoal">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Consertando o update de emails">
+  <meta name="twitter:description" content="Um pequeno post sobre como resolvi o issue">
+
+<meta property="og:url" content="http://localhost:1313/pt-br/posts/fixing-email-update/">
+  <meta property="og:site_name" content="Arthur Araujo">
+  <meta property="og:title" content="Consertando o update de emails">
+  <meta property="og:description" content="Um pequeno post sobre como resolvi o issue">
+  <meta property="og:locale" content="pt_br">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-04-25T00:00:00+00:00">
+    <meta property="article:modified_time" content="2025-04-25T00:00:00+00:00">
+    <meta property="article:tag" content="Wordview">
+    <meta property="article:tag" content="Api">
+    <meta property="article:tag" content="Spring">
+    <meta property="article:tag" content="Java">
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/pt-br/posts/fixing-email-update/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.css" media="screen">
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.css" media="screen">
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/img/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://localhost:1313/pt-br/">
+      Arthur Araujo
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/pt-br/projects/">Projetos</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/pt-br/posts/">Postagens</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/pt-br/contact/">Contato</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            
+              
+                <li class="navigation-item menu-separator">
+                  <span>|</span>
+                </li>
+                
+              
+              <li class="navigation-item">
+                <a href="/posts/fixing-email-update/">🇬🇧</a>
+              </li>
+            
+          
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://localhost:1313/pt-br/posts/fixing-email-update/">
+              Consertando o update de emails
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2025-04-25T00:00:00Z">
+                abril 25, 2025
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              3 minutos de leitura
+            </span>
+          </div>
+          <div class="authors">
+  <i class="fa-solid fa-user" aria-hidden="true"></i>
+    <a href="/pt-br/authors/arthur-araujo/">Arthur Araujo</a></div>
+
+          
+          <div class="tags">
+  <i class="fa-solid fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/pt-br/tags/wordview/">Wordview</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/pt-br/tags/api/">Api</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/pt-br/tags/spring/">Spring</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/pt-br/tags/java/">Java</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <p>Um pequeno post sobre como resolvi o issue <a href="https://github.com/word-view/APIWordView/issues/14"  class="external-link" target="_blank" rel="noopener">#14</a> na API do WordView.</p>
+<h4 id="o-problema">
+  O Problema
+  <a class="heading-link" href="#o-problema">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link para o cabeçalho"></i>
+    <span class="sr-only">Link para o cabeçalho</span>
+  </a>
+</h4>
+<p>O salt da senha é gerado através da combinação de <code>email + senha</code>, então atualizar somente
+o email quebra o sistema de login, quando o usuário que alterou o seu email tentar novamente
+entrar na conta o hash de login não vai ser igual ao armazenado no servidor.</p>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#d2a8ff;font-weight:bold">@PutMapping</span>(<span style="color:#a5d6ff">&#34;/me&#34;</span>)<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681"></span><span style="color:#ff7b72">public</span><span style="color:#6e7681"> </span>ResponseEntity<span style="color:#ff7b72;font-weight:bold">&lt;?&gt;</span><span style="color:#6e7681"> </span>update(<span style="color:#d2a8ff;font-weight:bold">@RequestBody</span><span style="color:#6e7681"> </span>UserUpdateRequest<span style="color:#6e7681"> </span>request,<span style="color:#6e7681"> </span>HttpServletRequest<span style="color:#6e7681"> </span>req)<span style="color:#6e7681"> </span>{<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">	</span><span style="color:#ff7b72">return</span><span style="color:#6e7681"> </span>response(()<span style="color:#6e7681"> </span><span style="color:#ff7b72;font-weight:bold">-&gt;</span><span style="color:#6e7681"> </span>{<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">		</span>User<span style="color:#6e7681"> </span>user<span style="color:#6e7681"> </span><span style="color:#ff7b72;font-weight:bold">=</span><span style="color:#6e7681"> </span>service.getMe(req);<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">		</span>User<span style="color:#6e7681"> </span>userAlter<span style="color:#6e7681"> </span><span style="color:#ff7b72;font-weight:bold">=</span><span style="color:#6e7681"> </span>request.toEntity();<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">		</span><span style="color:#8b949e;font-style:italic">// o método merge escreve os valores de &#39;userAlter&#39; sobre os de &#39;user&#39;</span><span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">		</span>User<span style="color:#6e7681"> </span>merged<span style="color:#6e7681"> </span><span style="color:#ff7b72;font-weight:bold">=</span><span style="color:#6e7681"> </span>ClassMerger.merge(user,<span style="color:#6e7681"> </span>userAlter);<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">		</span><span style="color:#8b949e;font-style:italic">// insert salva os valores alterados</span><span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">		</span>service.insert(merged);<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">		</span><span style="color:#ff7b72">return</span><span style="color:#6e7681"> </span>ok();<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">	</span>});<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681"></span>}<span style="color:#6e7681">
+</span></span></span></code></pre></div><hr>
+<h4 id="solucionando">
+  Solucionando
+  <a class="heading-link" href="#solucionando">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link para o cabeçalho"></i>
+    <span class="sr-only">Link para o cabeçalho</span>
+  </a>
+</h4>
+<p>Eu comecei por criar um novo tipo de request e o teste para ele. Enquanto eu criava esse teste
+percebi que todos os request tests são muito parecidos e que seria benéfico refatorar e simplicá-los, então criei um novo issue para trabalhar nessa questão depois.</p>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#d2a8ff;font-weight:bold">@Getter</span><span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681"></span><span style="color:#d2a8ff;font-weight:bold">@Setter</span><span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681"></span><span style="color:#ff7b72">public</span><span style="color:#6e7681"> </span><span style="color:#ff7b72">class</span> <span style="color:#f0883e;font-weight:bold">UserEmailUpdateRequest</span><span style="color:#6e7681"> </span>{<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">    </span><span style="color:#ff7b72">private</span><span style="color:#6e7681"> </span>String<span style="color:#6e7681"> </span>oldEmail;<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">    </span><span style="color:#ff7b72">private</span><span style="color:#6e7681"> </span>String<span style="color:#6e7681"> </span>newEmail;<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">    </span><span style="color:#ff7b72">private</span><span style="color:#6e7681"> </span>String<span style="color:#6e7681"> </span>password;<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681"></span><span style="color:#8b949e;font-style:italic">// ...</span><span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681"></span>}<span style="color:#6e7681">
+</span></span></span></code></pre></div><hr>
+<p>Para manter o sistema simples decidi separar a atualização do email da atualização das
+demais informações, juntar tudo em um só endpoint adicionaria uma complexidade a mais.</p>
+<p>A idéia é simples: Eu crio dois hashes (com o novo e com o velho email), comparo se o velho
+está de acordo com o que está armazenado e se sim eu altero o email e a senha com os novos valores.</p>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#d2a8ff;font-weight:bold">@PutMapping</span>(<span style="color:#a5d6ff">&#34;/me/email&#34;</span>)<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681"></span><span style="color:#ff7b72">public</span><span style="color:#6e7681"> </span>ResponseEntity<span style="color:#ff7b72;font-weight:bold">&lt;?&gt;</span><span style="color:#6e7681"> </span>updateEmail(<span style="color:#d2a8ff;font-weight:bold">@RequestBody</span><span style="color:#6e7681"> </span>UserEmailUpdateRequest<span style="color:#6e7681"> </span>request,<span style="color:#6e7681"> </span>HttpServletRequest<span style="color:#6e7681"> </span>req)<span style="color:#6e7681"> </span>{<span style="color:#6e7681">					
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">	</span><span style="color:#ff7b72">return</span><span style="color:#6e7681"> </span>response(()<span style="color:#6e7681"> </span><span style="color:#ff7b72;font-weight:bold">-&gt;</span><span style="color:#6e7681"> </span>{<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">		</span>request.validate();<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">		</span>User<span style="color:#6e7681"> </span>user<span style="color:#6e7681"> </span><span style="color:#ff7b72;font-weight:bold">=</span><span style="color:#6e7681"> </span>service.getMe(req);<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">		</span>String<span style="color:#6e7681"> </span>oldHash<span style="color:#6e7681"> </span><span style="color:#ff7b72;font-weight:bold">=</span><span style="color:#6e7681"> </span><span style="color:#ff7b72">new</span><span style="color:#6e7681"> </span>HashedPassword(request.getOldEmail(),<span style="color:#6e7681"> </span>request.getPassword()).getValue();<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">		</span>String<span style="color:#6e7681"> </span>newHash<span style="color:#6e7681"> </span><span style="color:#ff7b72;font-weight:bold">=</span><span style="color:#6e7681"> </span><span style="color:#ff7b72">new</span><span style="color:#6e7681"> </span>HashedPassword(request.getNewEmail(),<span style="color:#6e7681"> </span>request.getPassword()).getValue();<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">		</span><span style="color:#ff7b72">if</span><span style="color:#6e7681"> </span>(user.getPassword().equals(oldHash))<span style="color:#6e7681"> </span>{<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">			</span>user.setEmail(request.getNewEmail());<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">			</span>user.setPassword(newHash);<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">		</span>}<span style="color:#6e7681"> </span><span style="color:#ff7b72">else</span><span style="color:#6e7681"> </span>{<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">			</span><span style="color:#ff7b72">throw</span><span style="color:#6e7681"> </span><span style="color:#ff7b72">new</span><span style="color:#6e7681"> </span>IncorrectCredentialsException(<span style="color:#a5d6ff">&#34;Email or password did not match&#34;</span>);<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">		</span>}<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">		</span>service.insert(user);<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">		</span><span style="color:#ff7b72">return</span><span style="color:#6e7681"> </span>ok();<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">	</span>});<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681"></span>}<span style="color:#6e7681">
+</span></span></span></code></pre></div><hr>
+<p>O teste também é simples: Eu faço login na conta de teste, para garantir que o login esta funcionando corretamente,
+altero o email da conta, e tento fazer o login novamente usando o novo email.</p>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#ff7b72">class</span> <span style="color:#f0883e;font-weight:bold">UserControllerEmailUpdateTest</span><span style="color:#6e7681"> </span><span style="color:#ff7b72">extends</span><span style="color:#6e7681"> </span>ControllerTest<span style="color:#6e7681"> </span>{<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">    </span><span style="color:#d2a8ff;font-weight:bold">@Test</span><span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">    </span><span style="color:#d2a8ff;font-weight:bold">@Order</span>(1)<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">    </span><span style="color:#ff7b72">void</span><span style="color:#6e7681"> </span><span style="color:#d2a8ff;font-weight:bold">login</span>()<span style="color:#6e7681"> </span><span style="color:#ff7b72">throws</span><span style="color:#6e7681"> </span>Exception<span style="color:#6e7681"> </span>{<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">        </span>MockUser<span style="color:#6e7681"> </span>user<span style="color:#6e7681"> </span><span style="color:#ff7b72;font-weight:bold">=</span><span style="color:#6e7681"> </span><span style="color:#ff7b72">new</span><span style="color:#6e7681"> </span>MockUser(<span style="color:#a5d6ff">&#34;mock.user@gmail.com&#34;</span>,<span style="color:#6e7681"> </span><span style="color:#a5d6ff">&#34;S_enha64&#34;</span>);<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">        </span>req.post(<span style="color:#a5d6ff">&#34;/user/login&#34;</span>,<span style="color:#6e7681"> </span>user.toJson()).andExpect(status().isOk());<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">    </span>}<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">    </span><span style="color:#d2a8ff;font-weight:bold">@Test</span><span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">    </span><span style="color:#d2a8ff;font-weight:bold">@Order</span>(2)<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">    </span><span style="color:#ff7b72">void</span><span style="color:#6e7681"> </span><span style="color:#d2a8ff;font-weight:bold">updateEmail</span>()<span style="color:#6e7681"> </span><span style="color:#ff7b72">throws</span><span style="color:#6e7681"> </span>Exception<span style="color:#6e7681"> </span>{<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">        </span>String<span style="color:#6e7681"> </span>jwt<span style="color:#6e7681"> </span><span style="color:#ff7b72;font-weight:bold">=</span><span style="color:#6e7681"> </span>MockValues.getUserJwt(mockMvc);<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">        </span>MockEmailUpdateRequest<span style="color:#6e7681"> </span>request<span style="color:#6e7681"> </span><span style="color:#ff7b72;font-weight:bold">=</span><span style="color:#6e7681"> </span><span style="color:#ff7b72">new</span><span style="color:#6e7681"> </span>MockEmailUpdateRequest(<span style="color:#a5d6ff">&#34;mock.user@gmail.com&#34;</span>,<span style="color:#6e7681"> </span><span style="color:#a5d6ff">&#34;new.email@gmail.com&#34;</span>,<span style="color:#6e7681"> </span><span style="color:#a5d6ff">&#34;S_enha64&#34;</span>);<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">        </span>req.put(<span style="color:#a5d6ff">&#34;/user/me/email&#34;</span>,<span style="color:#6e7681"> </span>request.toJson(),<span style="color:#6e7681"> </span>jwt).andExpect(status().isOk());<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">    </span>}<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">    </span><span style="color:#d2a8ff;font-weight:bold">@Test</span><span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">    </span><span style="color:#d2a8ff;font-weight:bold">@Order</span>(3)<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">    </span><span style="color:#ff7b72">void</span><span style="color:#6e7681"> </span><span style="color:#d2a8ff;font-weight:bold">loginNewEmail</span>()<span style="color:#6e7681"> </span><span style="color:#ff7b72">throws</span><span style="color:#6e7681"> </span>Exception<span style="color:#6e7681"> </span>{<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">        </span>MockUser<span style="color:#6e7681"> </span>user<span style="color:#6e7681"> </span><span style="color:#ff7b72;font-weight:bold">=</span><span style="color:#6e7681"> </span><span style="color:#ff7b72">new</span><span style="color:#6e7681"> </span>MockUser(<span style="color:#a5d6ff">&#34;new.email@gmail.com&#34;</span>,<span style="color:#6e7681"> </span><span style="color:#a5d6ff">&#34;S_enha64&#34;</span>);<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">        </span>req.post(<span style="color:#a5d6ff">&#34;/user/login&#34;</span>,<span style="color:#6e7681"> </span>user.toJson()).andExpect(status().isOk());<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">    </span>}<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681"></span>}<span style="color:#6e7681">
+</span></span></span></code></pre></div><hr>
+<p>Enquanto criava o teste percebi que faltava algo: Ver se o email novo já estava sendo usado por outra conta.</p>
+<p>Por conta dessa lógica adicional, acabou ficando muito &lsquo;caro&rsquo; manter a lógica toda no Controller, então
+decidi mover tudo para o <code>UserService</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#d2a8ff;font-weight:bold">@PutMapping</span>(<span style="color:#a5d6ff">&#34;/me/email&#34;</span>)<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681"></span><span style="color:#ff7b72">public</span><span style="color:#6e7681"> </span>ResponseEntity<span style="color:#ff7b72;font-weight:bold">&lt;?&gt;</span><span style="color:#6e7681"> </span>updateEmail(<span style="color:#d2a8ff;font-weight:bold">@RequestBody</span><span style="color:#6e7681"> </span>UserEmailUpdateRequest<span style="color:#6e7681"> </span>request,<span style="color:#6e7681"> </span>HttpServletRequest<span style="color:#6e7681"> </span>req)<span style="color:#6e7681"> </span>{<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">	</span><span style="color:#ff7b72">return</span><span style="color:#6e7681"> </span>response(()<span style="color:#6e7681"> </span><span style="color:#ff7b72;font-weight:bold">-&gt;</span><span style="color:#6e7681"> </span>{<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">		</span>request.validate();<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">		</span>service.insertWithNewEmail(req,<span style="color:#6e7681"> </span>request.getNewEmail(),<span style="color:#6e7681"> </span>request.getOldEmail(),<span style="color:#6e7681"> </span>request.getPassword());<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">		</span><span style="color:#ff7b72">return</span><span style="color:#6e7681"> </span>ok();<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">	</span>});<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681"></span>}<span style="color:#6e7681">
+</span></span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#d2a8ff;font-weight:bold">@Override</span><span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681"></span><span style="color:#ff7b72">public</span><span style="color:#6e7681"> </span>User<span style="color:#6e7681"> </span><span style="color:#d2a8ff;font-weight:bold">insertWithNewEmail</span>(HttpServletRequest<span style="color:#6e7681"> </span>request,<span style="color:#6e7681"> </span>String<span style="color:#6e7681"> </span>newEmail,<span style="color:#6e7681"> </span>String<span style="color:#6e7681"> </span>oldEmail,<span style="color:#6e7681"> </span>String<span style="color:#6e7681"> </span>password)<span style="color:#6e7681"> </span><span style="color:#ff7b72">throws</span><span style="color:#6e7681"> </span>ValueTakenException,<span style="color:#6e7681"> </span>InvalidKeySpecException,<span style="color:#6e7681"> </span>NoSuchEntryException,<span style="color:#6e7681"> </span>IncorrectCredentialsException<span style="color:#6e7681"> </span>{<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">    </span>Optional<span style="color:#ff7b72;font-weight:bold">&lt;</span>User<span style="color:#ff7b72;font-weight:bold">&gt;</span><span style="color:#6e7681"> </span>existingUserWithNewEmail<span style="color:#6e7681"> </span><span style="color:#ff7b72;font-weight:bold">=</span><span style="color:#6e7681"> </span>repository.findByEmail(newEmail);<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">    </span><span style="color:#ff7b72">if</span><span style="color:#6e7681"> </span>(existingUserWithNewEmail.isPresent())<span style="color:#6e7681"> </span>{<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">        </span><span style="color:#ff7b72">throw</span><span style="color:#6e7681"> </span><span style="color:#ff7b72">new</span><span style="color:#6e7681"> </span>ValueTakenException(<span style="color:#a5d6ff">&#34;newEmail is already taken by another account.&#34;</span>);<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">    </span>}<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">    </span>User<span style="color:#6e7681"> </span>user<span style="color:#6e7681"> </span><span style="color:#ff7b72;font-weight:bold">=</span><span style="color:#6e7681"> </span>getMe(request);<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">    </span>String<span style="color:#6e7681"> </span>oldHash<span style="color:#6e7681"> </span><span style="color:#ff7b72;font-weight:bold">=</span><span style="color:#6e7681"> </span><span style="color:#ff7b72">new</span><span style="color:#6e7681"> </span>HashedPassword(oldEmail,<span style="color:#6e7681"> </span>password).getValue();<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">    </span>String<span style="color:#6e7681"> </span>newHash<span style="color:#6e7681"> </span><span style="color:#ff7b72;font-weight:bold">=</span><span style="color:#6e7681"> </span><span style="color:#ff7b72">new</span><span style="color:#6e7681"> </span>HashedPassword(newEmail,<span style="color:#6e7681"> </span>password).getValue();<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">    </span><span style="color:#ff7b72">if</span><span style="color:#6e7681"> </span>(user.getPassword().equals(oldHash))<span style="color:#6e7681"> </span>{<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">        </span>user.setEmail(newEmail);<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">        </span>user.setPassword(newHash);<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">    </span>}<span style="color:#6e7681"> </span><span style="color:#ff7b72">else</span><span style="color:#6e7681"> </span>{<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">        </span><span style="color:#ff7b72">throw</span><span style="color:#6e7681"> </span><span style="color:#ff7b72">new</span><span style="color:#6e7681"> </span>IncorrectCredentialsException(<span style="color:#a5d6ff">&#34;Email or password did not match&#34;</span>);<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">    </span>}<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">    </span><span style="color:#ff7b72">return</span><span style="color:#6e7681"> </span>insert(user);<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681"></span>}<span style="color:#6e7681">
+</span></span></span></code></pre></div><hr>
+<p>Com a nova variável, a ordem do teste fica assim: Login, tentar alterar o email com um email já em uso, alterar para um email novo, fazer login com o email novo.</p>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#d2a8ff;font-weight:bold">@Test</span><span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681"></span><span style="color:#d2a8ff;font-weight:bold">@Order</span>(2)<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681"></span><span style="color:#ff7b72">void</span><span style="color:#6e7681"> </span><span style="color:#d2a8ff;font-weight:bold">updateExistingEmail</span>()<span style="color:#6e7681"> </span><span style="color:#ff7b72">throws</span><span style="color:#6e7681"> </span>Exception<span style="color:#6e7681"> </span>{<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">    </span>String<span style="color:#6e7681"> </span>jwt<span style="color:#6e7681"> </span><span style="color:#ff7b72;font-weight:bold">=</span><span style="color:#6e7681"> </span>MockValues.getUserJwt(mockMvc);<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">    </span>MockEmailUpdateRequest<span style="color:#6e7681"> </span>request<span style="color:#6e7681"> </span><span style="color:#ff7b72;font-weight:bold">=</span><span style="color:#6e7681"> </span><span style="color:#ff7b72">new</span><span style="color:#6e7681"> </span>MockEmailUpdateRequest(<span style="color:#a5d6ff">&#34;mock.user@gmail.com&#34;</span>,<span style="color:#6e7681"> </span><span style="color:#a5d6ff">&#34;mock.admin@gmail.com&#34;</span>,<span style="color:#6e7681"> </span><span style="color:#a5d6ff">&#34;S_enha64&#34;</span>);<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681">    </span>req.put(<span style="color:#a5d6ff">&#34;/user/me/email&#34;</span>,<span style="color:#6e7681"> </span>request.toJson(),<span style="color:#6e7681"> </span>jwt).andExpect(status().isForbidden());<span style="color:#6e7681">
+</span></span></span><span style="display:flex;"><span><span style="color:#6e7681"></span>}<span style="color:#6e7681">
+</span></span></span></code></pre></div><hr>
+<p>Com isso, eu rodo todos os testes e pronto!</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2025
+     Arthur Araujo 
+    ·
+    
+    Promovido por <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+</html>

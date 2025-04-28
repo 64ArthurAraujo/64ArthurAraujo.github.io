@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Arthur Araujo</title>
+    <link>http://localhost:1313/pt-br/authors/arthur-araujo/</link>
+    <description>Recent content on Arthur Araujo</description>
+    <generator>Hugo</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Fri, 25 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/pt-br/authors/arthur-araujo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Consertando o update de emails</title>
+      <link>http://localhost:1313/pt-br/posts/fixing-email-update/</link>
+      <pubDate>Fri, 25 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pt-br/posts/fixing-email-update/</guid>
+      <description>&lt;p&gt;Um pequeno post sobre como resolvi o issue &lt;a href=&#34;https://github.com/word-view/APIWordView/issues/14&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;#14&lt;/a&gt; na API do WordView.&lt;/p&gt;&#xA;&lt;h4 id=&#34;o-problema&#34;&gt;&#xA;  O Problema&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#o-problema&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link para o cabeçalho&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link para o cabeçalho&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h4&gt;&#xA;&lt;p&gt;O salt da senha é gerado através da combinação de &lt;code&gt;email + senha&lt;/code&gt;, então atualizar somente&#xA;o email quebra o sistema de login, quando o usuário que alterou o seu email tentar novamente&#xA;entrar na conta o hash de login não vai ser igual ao armazenado no servidor.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
