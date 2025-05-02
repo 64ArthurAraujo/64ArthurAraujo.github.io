@@ -23,6 +23,13 @@
       <description>&lt;p&gt;Você pode entrar em contato através do meu email: &lt;a href=&#34;mailto:arthur.araujo@tutanota.com&#34; &gt;arthur.araujo@tutanota.com&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Galeria</title>
+      <link>http://localhost:1313/pt-br/projects/gallery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/pt-br/projects/gallery/</guid>
+      <description>&lt;hr&gt;&#xA;&lt;h1 id=&#34;wordview-android&#34;&gt;&#xA;  WordView-android&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#wordview-android&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link para o cabeçalho&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link para o cabeçalho&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/images/login.png&#34; &gt;Tela de login&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/images/register.png&#34; &gt;Tela de criação de conta&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/images/home.png&#34; &gt;Tela home&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/images/search.png&#34; &gt;Tela de pesquisa&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/images/player.png&#34; &gt;Player 1&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;http://localhost:1313/images/player2.png&#34; &gt;Player 2&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+    <item>
       <title>Projetos</title>
       <link>http://localhost:1313/pt-br/projects/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

@@ -156,6 +156,18 @@
                 href="http://localhost:1313/pt-br/contato/"
                 />
   </url><url>
+    <loc>http://localhost:1313/pt-br/projects/gallery/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="http://localhost:1313/projects/gallery/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="pt-br"
+                href="http://localhost:1313/pt-br/projects/gallery/"
+                />
+  </url><url>
     <loc>http://localhost:1313/pt-br/projects/</loc>
     <xhtml:link
                 rel="alternate"
