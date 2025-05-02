@@ -200,7 +200,7 @@ section based on books.</p>
 </h2>
 <p>There are two main projects: APIWordView, and WordView-android. And three auxiliary libraries: Gengolex, Assis, and WordFind.</p>
 <h6 id="apiwordview">
-  APIWordView
+  <a href="https://github.com/word-view/APIWordView"  class="external-link" target="_blank" rel="noopener">APIWordView</a>
   <a class="heading-link" href="#apiwordview">
     <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
@@ -209,7 +209,7 @@ section based on books.</p>
 <p>An REST API created with spring boot using PostgreSQL as it&rsquo;s database, it manages lyrics, lessons, images and account authentications, etc. There are some adaptions made to the usual way a spring boot
 api is structured that makes development faster and the code easier to understand.</p>
 <h6 id="wordview-android">
-  WordView-android
+  <a href="https://github.com/word-view/WordView-android"  class="external-link" target="_blank" rel="noopener">WordView-android</a>
   <a class="heading-link" href="#wordview-android">
     <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
@@ -219,17 +219,17 @@ api is structured that makes development faster and the code easier to understan
 <p>There are some plans in the future to convert it into a Kotlin Multiplatform project, allowing it to run on Android, IOS, Web and locally in the PC using the same codebase.</p>
 <p>You can see some images of the app at the <a href="gallery/#wordview-android" >gallery</a>.</p>
 <h6 id="gengolex">
-  Gengolex
+  <a href="https://github.com/word-view/gengolex"  class="external-link" target="_blank" rel="noopener">Gengolex</a>
   <a class="heading-link" href="#gengolex">
     <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
   </a>
 </h6>
-<p>Gengolex can be defined as the &ldquo;brain&rdquo; of the idea. To use it, the user has to create a new <code>Parser</code> with the desired language
+<p>Language parser and lexer written in Kotlin. To use it, the user has to create a new <code>Parser</code> with the desired language
 supported by the library, and either use a dictionary defined in the resources folder or a runtime dictionary. The dictionary contains the registration of the words and their characteristics such as the way that the word can be displayed, if it is a verb or a noun, if the verb is present past or future, etc. Each word has an parent, that is ideally the translation of the word in english, an example can be seen <a href="https://github.com/word-view/gengolex/blob/master/src/test/resources/dictionaries/kanji/kanji.json"  class="external-link" target="_blank" rel="noopener">here</a>.</p>
 <p>With everything set up, the user can parse a string of characters using <code>Parser.findWords</code>, this function returns a list of the words contained in the string that are defined in the dictionary.</p>
 <h6 id="assis">
-  Assis
+  <a href="https://github.com/word-view/assis"  class="external-link" target="_blank" rel="noopener">Assis</a>
   <a class="heading-link" href="#assis">
     <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
@@ -238,7 +238,7 @@ supported by the library, and either use a dictionary defined in the resources f
 <p>Assis (named after Brazilian writer Machado de Assis) is an ebook reader written in Kotlin. Currently unused, but will be in the future for the book section of the app.</p>
 <p>It can parse most epub files, although it is not very stable yet. To use it the user can call <code>parseEpub</code> and pass the epub file InputStream as the argument. The returned value is a EpubBook class that has some methods to get the title, cover and pages text.</p>
 <h6 id="wordfind">
-  WordFind
+  <a href="https://github.com/word-view/WordFind"  class="external-link" target="_blank" rel="noopener">WordFind</a>
   <a class="heading-link" href="#wordfind">
     <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
     <span class="sr-only">Link to heading</span>
